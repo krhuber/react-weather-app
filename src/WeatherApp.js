@@ -25,7 +25,9 @@ export default function App() {
                   </div>
                 </div>
               </form>
+
               <h2 id="city">Atlanta</h2>
+
               <ul className="timeamp-current-condition">
                 <div>
                   <li>
@@ -42,8 +44,7 @@ export default function App() {
                 </div>
               </ul>
             </div>
-
-            <div className="row current-weather">
+            <div className="row current-weather mt-5">
               <div className="col-6">
                 <div className="clearfix weather-temperature">
                   <img
@@ -58,22 +59,129 @@ export default function App() {
                   </div>
                 </div>
               </div>
+
+              <div className="col-6">
+                <ul className="current-conditions">
+                  <li>
+                    Humidity: <span id="humidity">10</span>%
+                  </li>
+                  <li>
+                    Wind: <span id="wind">2</span> mph
+                  </li>
+                  <li>
+                    Feels Like: <span id="feels-like">80</span>°F
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="col-6">
-              <ul className="current-conditions">
-                <li>
-                  Humidity: <span id="humidity">10</span>%
-                </li>
-                <li>
-                  Wind: <span id="wind">2</span> mph
-                </li>
-                <li>
-                  Feels Like: <span id="feels-like">80</span>°F
-                </li>
-              </ul>
+            <br />
+            <div class="row">
+              <div class="col">
+                <span class="daily-forecast">Daily Forecast</span>
+              </div>
+            </div>
+            <div class="weather-forecast" id="forecast">
+              <div class="row">
+                <div class="col">
+                  <div class="weather-forecast-date">
+                    Monday
+                    {/* ${formatDay(forecastDay.dt)} */}
+                  </div>
+
+                  <img src="../images/01d.png" alt="" width="40px" />
+                  <div class="weather-forecast-temperature">
+                    <span class="weather-temperature-max">
+                      {/* ${Math.round(forecastDay.temp.max)}*/}
+                      80°
+                    </span>
+                    |
+                    <span class="weather-temperature-min">
+                      {/* ${Math.round(forecastDay.temp.min)}*/}
+                      70°
+                    </span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="weather-forecast-date">
+                    Tuesday
+                    {/* ${formatDay(forecastDay.dt)} */}
+                  </div>
+
+                  <img src="../images/04d.png" alt="" width="40px" />
+                  <div class="weather-forecast-temperature">
+                    <span class="weather-temperature-max">
+                      {/* ${Math.round(forecastDay.temp.max)}*/}
+                      80°
+                    </span>
+                    |
+                    <span class="weather-temperature-min">
+                      {/* ${Math.round(forecastDay.temp.min)}*/}
+                      70°
+                    </span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="weather-forecast-date">
+                    Wednesday
+                    {/* ${formatDay(forecastDay.dt)} */}
+                  </div>
+
+                  <img src="../images/09d.png" alt="" width="40px" />
+                  <div class="weather-forecast-temperature">
+                    <span class="weather-temperature-max">
+                      {/* ${Math.round(forecastDay.temp.max)}*/}
+                      80°
+                    </span>
+                    |
+                    <span class="weather-temperature-min">
+                      {/* ${Math.round(forecastDay.temp.min)}*/}
+                      70°
+                    </span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="weather-forecast-date">
+                    Thursday
+                    {/* ${formatDay(forecastDay.dt)} */}
+                  </div>
+
+                  <img src="../images/11d.png" alt="" width="40px" />
+                  <div class="weather-forecast-temperature">
+                    <span class="weather-temperature-max">
+                      {/* ${Math.round(forecastDay.temp.max)}*/}
+                      80°
+                    </span>
+                    |
+                    <span class="weather-temperature-min">
+                      {/* ${Math.round(forecastDay.temp.min)}*/}
+                      70°
+                    </span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="weather-forecast-date">
+                    Friday
+                    {/* ${formatDay(forecastDay.dt)} */}
+                  </div>
+
+                  <img src="../images/10d.png" alt="" width="40px" />
+                  <div class="weather-forecast-temperature">
+                    <span class="weather-temperature-max">
+                      {/* ${Math.round(forecastDay.temp.max)}*/}
+                      80°
+                    </span>
+                    |
+                    <span class="weather-temperature-min">
+                      {/* ${Math.round(forecastDay.temp.min)}*/}
+                      70°
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
         <small>
           <a
             href="https://github.com/krhuber/weather-app-final-project"
