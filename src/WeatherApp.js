@@ -184,7 +184,7 @@ export default function App() {
 
         <small>
           <a
-            href="https://github.com/krhuber/weather-app-final-project"
+            href="https://github.com/krhuber/react-weather-app"
             target="_blank"
             rel="noreferrer"
           >
