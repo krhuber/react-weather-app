@@ -183,18 +183,21 @@ export default function App() {
         </div>
 
         <small>
+          {" "}
+          This project was coded by Kathryn Huber and is open-sourced on{" "}
           <a
             href="https://github.com/krhuber/react-weather-app"
             target="_blank"
             rel="noreferrer"
           >
-            Open Source Code
-          </a>
-          by Kathryn Huber
+            Github
+          </a>{" "}
+          and hosted on{" "}
+          <a href="https://cheerful-frangipane-525e7d.netlify.app/">Netlify</a>
         </small>
         <br />
         <small>
-          Weather icons by
+          Weather icons by{" "}
           <a
             href="https://www.flaticon.com/packs/weather-765?word=weather%20forecast"
             className="href"
